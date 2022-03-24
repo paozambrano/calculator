@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+.wrapper{
+    width: 300px;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 50px;
+    border-radius: 8px;
+    
+
+}
+button{
+    cursor: pointer;
+    padding: 20px;
+    margin: 1px;
+    border: 1px solid rgba(0, 0, 0, 0.466);
+    font-weight: bold;
+    border-radius: 4px;
+    background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
+    background-blend-mode: multiply,multiply;
+}
+.numbers-container{
+   display: grid;
+   grid-template-rows: repeat(3, auto);
+}
+.calc-buttons{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#screen{
+    width: 250px;
+    margin-top: 10px; 
+    background-color: gray;
+    color: white;
+    text-align: right;
+    font-size: 36px;
+    border: none;
+    font-family: 'Chakra Petch', sans-serif;
+    border-radius: 5px;
+}
+.clear{
+    display: grid;
+    grid-template-columns: auto;
+    gap: 2px;
+}
+.numbers{
+    display: flex;
+    flex-direction: column-reverse;
+    
+}
+.zero{
+    display: grid;
+    grid-template-rows: repeat(3,auto);
+}
+.operations{
+    display: flex;
+    flex-direction: column;
+    margin-left: 2px;
+    
+}
+.operation{
+    background-color: rgb(199, 112, 32);
+    
+    color: white;
+}
+button:hover{
+    background-color: rgb(204, 153, 133);
+}
